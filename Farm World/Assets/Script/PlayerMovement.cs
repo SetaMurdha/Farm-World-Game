@@ -23,10 +23,16 @@ public class PlayerMovement : MonoBehaviour
 
         rb.velocity = new Vector2(move * speed, rb.velocity.y);
 
-        if (Input.GetKey(KeyCode.Space))
-        {
-
-        }
+        charJump();
 
     }
+
+    void charJump()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            rb.velocity = new Vector2(move * speed, jumpForces);
+        }
+    }
+
 }
