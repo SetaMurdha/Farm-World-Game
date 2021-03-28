@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private GameObject character;
-    [SerializeField] private float speed = 10;
-    private Animator anim;
+    [SerializeField] private float speed = 10f;
+    [SerializeField] private float jumpForces = 5f;
+    [SerializeField] private float gravity = 10f;
+    private float move = 0f;
     private Rigidbody2D rb;
 
     // Start is called before the first frame update
@@ -18,6 +19,14 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        move = Input.GetAxis("Horizontal");
+
+        rb.velocity = new Vector2(move * speed, rb.velocity.y);
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+
+        }
+
     }
 }
