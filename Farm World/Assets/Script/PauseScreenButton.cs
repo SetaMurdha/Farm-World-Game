@@ -1,18 +1,33 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseScreenButton : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject pauseMenuPanel;
+
+    public void pauseGame()
     {
-        
+        pauseMenuPanel.SetActive(true);
+        Time.timeScale = 0f;
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public void resumeGame()
     {
-        
+        pauseMenuPanel.SetActive(false);
+        Time.timeScale = 1f;
     }
+
+    public void quitGame()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void exitGame()
+    {
+        quitGame();
+    }
+
 }

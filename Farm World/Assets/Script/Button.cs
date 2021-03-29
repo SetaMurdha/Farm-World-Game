@@ -5,13 +5,34 @@ using UnityEngine.SceneManagement;
 
 public class Button : MonoBehaviour
 {
+    public GameObject Panel = null;
     public void PlayButton()
     {
-        SceneManager.LoadScene(1);
+        Panel.SetActive(true);
     }
     public void QuitButton()
     {
         Application.Quit();
+    }
+
+    public void level1()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+    public void level2()
+    {
+        SceneManager.LoadScene(2);
+    }
+
+    public void level3()
+    {
+        SceneManager.LoadScene(3);
+    }
+
+    public void backButton()
+    {
+        Panel.SetActive(false);
     }
 
 }

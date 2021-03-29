@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 5842588}
   - component: {fileID: 5842587}
   - component: {fileID: 5842586}
+  - component: {fileID: 5842589}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
@@ -202,7 +203,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5842587}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5842589}
+        m_MethodName: pauseGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5842587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,6 +252,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5842584}
   m_CullTransparentMesh: 0
+--- !u!114 &5842589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5842584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2274418e983a8d49ab446beff4c4770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenuPanel: {fileID: 1038928420}
 --- !u!1 &176288028
 GameObject:
   m_ObjectHideFlags: 0
@@ -592,6 +617,7 @@ GameObject:
   - component: {fileID: 283123258}
   - component: {fileID: 283123257}
   - component: {fileID: 283123256}
+  - component: {fileID: 283123259}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -664,6 +690,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &283123259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283123255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b00153fac416f44dbdebfdc84100eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseScene: {fileID: 1038928420}
 --- !u!1 &576277306
 GameObject:
   m_ObjectHideFlags: 0
@@ -795,6 +834,7 @@ GameObject:
   - component: {fileID: 589409565}
   - component: {fileID: 589409564}
   - component: {fileID: 589409563}
+  - component: {fileID: 589409566}
   m_Layer: 5
   m_Name: Resume
   m_TagString: Untagged
@@ -864,7 +904,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 589409564}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 589409566}
+        m_MethodName: resumeGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &589409564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -902,6 +953,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 589409561}
   m_CullTransparentMesh: 0
+--- !u!114 &589409566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589409561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2274418e983a8d49ab446beff4c4770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenuPanel: {fileID: 1038928420}
 --- !u!1 &604337943
 GameObject:
   m_ObjectHideFlags: 0
@@ -2059,6 +2123,7 @@ GameObject:
   - component: {fileID: 1259796980}
   - component: {fileID: 1259796979}
   - component: {fileID: 1259796978}
+  - component: {fileID: 1259796981}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -2128,7 +2193,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1259796979}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1259796981}
+        m_MethodName: quitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1259796979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2166,6 +2242,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1259796976}
   m_CullTransparentMesh: 0
+--- !u!114 &1259796981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259796976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2274418e983a8d49ab446beff4c4770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenuPanel: {fileID: 1038928420}
 --- !u!1 &1277915719
 GameObject:
   m_ObjectHideFlags: 0
@@ -2663,6 +2752,7 @@ GameObject:
   - component: {fileID: 1549224467}
   - component: {fileID: 1549224466}
   - component: {fileID: 1549224465}
+  - component: {fileID: 1549224468}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -2732,7 +2822,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1549224466}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1549224468}
+        m_MethodName: exitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1549224466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2770,6 +2871,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1549224463}
   m_CullTransparentMesh: 0
+--- !u!114 &1549224468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549224463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2274418e983a8d49ab446beff4c4770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenuPanel: {fileID: 1038928420}
 --- !u!1 &1957199462
 GameObject:
   m_ObjectHideFlags: 0
