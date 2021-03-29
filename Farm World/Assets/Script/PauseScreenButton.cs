@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PauseScreenButton : MonoBehaviour
 {
-    public GameObject pauseMenuPanel;
+    public GameObject pauseMenuPanel = null;
 
     public void pauseGame()
     {
