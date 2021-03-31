@@ -4,35 +4,81 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float speed = 10f;
-    [SerializeField] private float jumpForces = 5f;
-    [SerializeField] private float gravity = 10f;
-    private float move = 0f;
     private Rigidbody2D rb;
+    private bool BLeft;
+    private bool BRight;
+    private bool BJump;
+    private float horizontalMove;
+    private float verticalMove;
+    [SerializeField] private float speed = 10f;
+    [SerializeField] private float jumpforces = 5f;
+    [SerializeField] private float gravity = 8f;
 
-    // Start is called before the first frame update
-    void Start()
+    public void PDownJump()
+    {
+        BJump = true;
+    }
+    public void PUpJump()
+    {
+        BJump = false;
+    }
+
+    public void PDownLeft()
+    {
+        BLeft = true;
+    }
+    public void PUpLeft()
+    {
+        BLeft = false;
+    }
+    public void PDownRight()
+    {
+        BRight = true;
+    }
+    public void PUpRight()
+    {
+        BRight = false;
+    }
+
+    private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        move = Input.GetAxis("Horizontal");
-
-        rb.velocity = new Vector2(move * speed, rb.velocity.y);
-
-        charJump();
+        BLeft = false;
+        BRight = false;
+        BJump = false;
 
     }
 
-    void charJump()
+    private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        movement();
+    }
+
+    private void movement()
+    {
+        if (BLeft)
         {
-            rb.velocity = new Vector2(move * speed, jumpForces);
+            horizontalMove = -speed;
         }
+        else if (BRight)
+        {
+            horizontalMove = speed;
+        }
+        else if (BJump)
+        {
+            verticalMove = jumpforces;
+        }
+        else
+        {
+            horizontalMove = 0;
+            verticalMove = -gravity;
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        rb.velocity = new Vector2(horizontalMove, rb.velocity.y);
+        rb.velocity = new Vector2(rb.velocity.x, verticalMove);
     }
 
 }
