@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DagingScript : MonoBehaviour
 {
-    public int meatPoint;
+    public int meatPoint = 0;
     private ItemManagerScript itemMngScrpt;
 
     // Start is called before the first frame update
@@ -23,8 +23,8 @@ public class DagingScript : MonoBehaviour
     {
         if(item.tag == "player")
         {
-            itemMngScrpt.AddMeat(meatPoint);
             Destroy(gameObject);
+            itemMngScrpt.AddMeat(meatPoint);
         }
         
     }
