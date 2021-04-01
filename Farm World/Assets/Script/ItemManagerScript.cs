@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ItemManagerScript : MonoBehaviour
 {
-    public int meat;
+    public int meat = 0;
     public int spinach;
     public int honey;
     public int carrot;
@@ -28,15 +28,15 @@ public class ItemManagerScript : MonoBehaviour
     }
     public void AddHoney(int honeyNumber)
     {
-        meat += honeyNumber;
+        honey += honeyNumber;
     }
     public void AddSpinach(int spinachNumber)
     {
-        meat += spinachNumber;
+        spinach += spinachNumber;
     }
     public void AddCarrot(int carrotNumber)
     {
-        meat += carrotNumber;
+        carrot += carrotNumber;
     }
 
 }

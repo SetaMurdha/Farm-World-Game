@@ -384,7 +384,7 @@ GameObject:
   - component: {fileID: 219254185}
   m_Layer: 0
   m_Name: Sawi (1)
-  m_TagString: spinach
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2235,7 +2235,7 @@ GameObject:
   - component: {fileID: 1039449823}
   m_Layer: 0
   m_Name: Daging
-  m_TagString: meat
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
