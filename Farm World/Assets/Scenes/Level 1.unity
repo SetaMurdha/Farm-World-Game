@@ -1422,7 +1422,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f6f199101b59045a5578af0dbecce2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 20
+  timeRemaining: 5
   panelLost: {fileID: 2886506}
   timeText: {fileID: 0}
 --- !u!1 &779096455
