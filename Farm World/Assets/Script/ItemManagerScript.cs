@@ -24,19 +24,19 @@ public class ItemManagerScript : MonoBehaviour
 
     public void AddMeat(int meatNumber)
     {
-        meat += meatNumber;
+        meat = meatNumber;
     }
     public void AddHoney(int honeyNumber)
     {
-        honey += honeyNumber;
+        honey = honeyNumber;
     }
     public void AddSpinach(int spinachNumber)
     {
-        spinach += spinachNumber;
+        spinach = spinachNumber;
     }
     public void AddCarrot(int carrotNumber)
     {
-        carrot += carrotNumber;
+        carrot = carrotNumber;
     }
 
 }
