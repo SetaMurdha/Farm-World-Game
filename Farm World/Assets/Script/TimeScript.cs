@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class TimeScript : MonoBehaviour
 {
     // Start is called before the first frame update
-    private float timeRemaining = 10f;
+    public float timeRemaining = 10f;
     public GameObject panelLost;
     public Text timeText;
     

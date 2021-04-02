@@ -27,7 +27,16 @@ public class PauseScreenButton : MonoBehaviour
 
     public void exitGame()
     {
-        quitGame();
+        Application.Quit();
+    }
+
+    public void nextLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+    public void retryLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
 }
