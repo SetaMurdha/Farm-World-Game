@@ -13,13 +13,13 @@ public class DagingScript : MonoBehaviour
     void Start()
     {
         itemMngScrpt = FindObjectOfType<ItemManagerScript>();
-        DisplayScore(meatPoint);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+    
     }
 
     private void OnTriggerEnter2D(Collider2D item)
@@ -34,9 +34,5 @@ public class DagingScript : MonoBehaviour
         
     }
 
-    void DisplayScore(int Score)
-    {
-        score.text = string.Format("{0}", Score);
-    }
 
 }
