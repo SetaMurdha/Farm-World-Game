@@ -59,10 +59,26 @@ public class PlayerMovement : MonoBehaviour
         if (BLeft)
         {
             horizontalMove = -speed;
+            if (BJump)
+            {
+                verticalMove = jumpforces;
+            }
+            else
+            {
+                verticalMove = -gravity;
+            }
         }
         else if (BRight)
         {
             horizontalMove = speed;
+            if (BJump)
+            {
+                verticalMove = jumpforces;
+            }
+            else
+            {
+                verticalMove = -gravity;
+            }
         }
         else if (BJump)
         {
