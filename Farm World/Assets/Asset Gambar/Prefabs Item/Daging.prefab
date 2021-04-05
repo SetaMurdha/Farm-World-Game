@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 7393358997286851233}
   - component: {fileID: 7393358997286851234}
-  - component: {fileID: 7393358997286851235}
   - component: {fileID: 7393358997286851164}
   - component: {fileID: 7393358997286851166}
+  - component: {fileID: 3261085025721766775}
   m_Layer: 0
   m_Name: Daging
-  m_TagString: Untagged
+  m_TagString: Daging
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84,20 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7393358997286851235
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7393358997286851167}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc6c495d6f1f31945933103d41a41e2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  meatPoint: 0
-  score: {fileID: 0}
 --- !u!50 &7393358997286851164
 Rigidbody2D:
   serializedVersion: 4
@@ -145,3 +131,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.24, y: 10.24}
   m_EdgeRadius: 0
+--- !u!114 &3261085025721766775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7393358997286851167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbe2b18e86a60584f8b55ece8d4adf19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

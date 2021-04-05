@@ -32,7 +32,7 @@ public class ItemManagerScript : MonoBehaviour
 
     public void gameLevel1()
     {
-        if(meat == 2)
+        if(meat == 5)
         {
             WinPanel.SetActive(true);
             Time.timeScale = 0f;

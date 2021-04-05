@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - player
+  - Daging
+  - Destroyer
+  - obtacles
   layers:
   - Default
   - TransparentFX

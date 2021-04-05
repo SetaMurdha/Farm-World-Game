@@ -24,9 +24,8 @@ public class DagingScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D item)
     {
-        if(item.tag == "player")
+        if(item.tag == "Daging")
         {
-            Destroy(gameObject);
             meatPoint++;
             itemMngScrpt.AddMeat(meatPoint);
 
