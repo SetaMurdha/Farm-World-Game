@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DagingScript : MonoBehaviour
+public class ItemCatch : MonoBehaviour
 {
     public int meatPoint = 0;
+    public int honeyPoint = 0;
+    public int carrotPoint = 0;
+    public int spinachPoint = 0;
     private ItemManagerScript itemMngScrpt;
     public Text score;
 
@@ -28,6 +31,24 @@ public class DagingScript : MonoBehaviour
         {
             meatPoint++;
             itemMngScrpt.AddMeat(meatPoint);
+
+        }
+        if(item.tag == "Sawi")
+        {
+            spinachPoint++;
+            itemMngScrpt.AddSpinach(spinachPoint);
+
+        }
+        if(item.tag == "Madu")
+        {
+            honeyPoint++;
+            itemMngScrpt.AddHoney(honeyPoint);
+
+        }
+        if(item.tag == "Wortel")
+        {
+            carrotPoint++;
+            itemMngScrpt.AddCarrot(carrotPoint);
 
         }
         
