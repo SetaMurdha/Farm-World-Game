@@ -2176,7 +2176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f6f199101b59045a5578af0dbecce2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 150
+  timeRemaining: 90
   panelLost: {fileID: 2886506}
   timeText: {fileID: 131789958}
 --- !u!114 &701937754
@@ -4913,9 +4913,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Kumpulkan!
 
-    Daging : 15
+    Daging : 10
 
-    Sawi : 10'
+    Sawi : 5'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
