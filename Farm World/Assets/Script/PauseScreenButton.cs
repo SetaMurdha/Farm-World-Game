@@ -6,12 +6,18 @@ using UnityEngine.SceneManagement;
 public class PauseScreenButton : MonoBehaviour
 {
     public GameObject pauseMenuPanel = null;
-
+    public GameObject helpPanel = null;
     public void pauseGame()
     {
         pauseMenuPanel.SetActive(true);
         Time.timeScale = 0f;
 
+    }
+
+    public void helpPanelScreen()
+    {
+        helpPanel.SetActive(true);
+        Time.timeScale = 0f;
     }
 
     public void resumeGame()
