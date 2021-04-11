@@ -2737,8 +2737,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  jumpforces: 20
-  gravity: 8
+  Runforces: 5
 --- !u!212 &938943570
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5357,7 +5356,7 @@ GameObject:
   - component: {fileID: 1788303868}
   - component: {fileID: 1788303869}
   m_Layer: 5
-  m_Name: Button Jump
+  m_Name: Button Run
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5401,7 +5400,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1243853946592367220, guid: 2676ff5c94fc9f1489d59bf570d079e3,
+  m_Sprite: {fileID: -4005789564629187255, guid: 2676ff5c94fc9f1489d59bf570d079e3,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0

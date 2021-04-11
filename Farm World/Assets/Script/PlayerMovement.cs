@@ -7,20 +7,18 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private bool BLeft;
     private bool BRight;
-    private bool BJump;
+    private bool BRun;
     private float horizontalMove;
-    private float verticalMove;
-    [SerializeField] private float speed = 10f;
-    [SerializeField] private float jumpforces = 5f;
-    [SerializeField] private float gravity = 8f;
+    [SerializeField] private float speed = 8f;
+    [SerializeField] private float Runforces = 2f;
 
     public void PDownJump()
     {
-        BJump = true;
+        BRun = true;
     }
     public void PUpJump()
     {
-        BJump = false;
+        BRun = false;
     }
 
     public void PDownLeft()
@@ -45,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         BLeft = false;
         BRight = false;
-        BJump = false;
+        BRun = false;
 
     }
 
@@ -59,42 +57,29 @@ public class PlayerMovement : MonoBehaviour
         if (BLeft)
         {
             horizontalMove = -speed;
-            if (BJump)
+            if (BRun)
             {
-                verticalMove = jumpforces;
+                horizontalMove = horizontalMove * Runforces;
             }
-            else
-            {
-                verticalMove = -gravity;
-            }
+
         }
         else if (BRight)
         {
             horizontalMove = speed;
-            if (BJump)
+            if (BRun)
             {
-                verticalMove = jumpforces;
+                horizontalMove = horizontalMove * Runforces;
             }
-            else
-            {
-                verticalMove = -gravity;
-            }
-        }
-        else if (BJump)
-        {
-            verticalMove = jumpforces;
         }
         else
         {
             horizontalMove = 0;
-            verticalMove = -gravity;
         }
     }
 
     private void FixedUpdate()
     {
         rb.velocity = new Vector2(horizontalMove, rb.velocity.y);
-        rb.velocity = new Vector2(rb.velocity.x, verticalMove);
     }
 
 }
