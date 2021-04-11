@@ -9,6 +9,7 @@ public class ItemManagerScript : MonoBehaviour
     public int spinach;
     public int honey;
     public int carrot;
+    public int level;
     public GameObject WinPanel;
     public Text SkorDaging;
     public Text SkorMadu;
@@ -24,9 +25,18 @@ public class ItemManagerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gameLevel1();
-        gameLevel2();
-        gameLevel3();
+        if (level == 1)
+        {
+            gameLevel1();
+        }
+        else if (level == 2)
+        {
+            gameLevel2();
+        } else if (level == 3)
+        {
+            gameLevel3();
+        }
+
         displayScore();
     }
 
