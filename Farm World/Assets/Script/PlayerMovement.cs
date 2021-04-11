@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private bool BRight;
     private bool BRun;
     SpriteRenderer playerSplit;
+    Animator selfAnimation;
     private float horizontalMove;
     [SerializeField] private float speed = 8f;
     [SerializeField] private float Runforces = 2f;
@@ -43,6 +44,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         playerSplit = GetComponent<SpriteRenderer>();
+        selfAnimation = GetComponent<Animator>();
         BLeft = false;
         BRight = false;
         BRun = false;
@@ -60,6 +62,7 @@ public class PlayerMovement : MonoBehaviour
         {
             horizontalMove = -speed;
             playerSplit.flipX = true;
+            selfAnimation.SetBool("Walk", true);
             if (BRun)
             {
                 horizontalMove = horizontalMove * Runforces;
@@ -70,6 +73,7 @@ public class PlayerMovement : MonoBehaviour
         {
             horizontalMove = speed;
             playerSplit.flipX = false;
+            selfAnimation.SetBool("Walk", true);
             if (BRun)
             {
                 horizontalMove = horizontalMove * Runforces;
@@ -78,6 +82,7 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             horizontalMove = 0;
+            selfAnimation.SetBool("Walk", false);
         }
     }
 

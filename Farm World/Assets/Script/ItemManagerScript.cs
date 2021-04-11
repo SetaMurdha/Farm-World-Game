@@ -32,7 +32,7 @@ public class ItemManagerScript : MonoBehaviour
 
     public void gameLevel1()
     {
-        if(meat == 10 && spinach == 5)
+        if(meat >= 10 && spinach >= 5)
         {
             WinPanel.SetActive(true);
             Time.timeScale = 0f;
@@ -40,7 +40,7 @@ public class ItemManagerScript : MonoBehaviour
     }
     public void gameLevel2()
     {
-        if(meat == 23 && spinach == 12 && honey == 6)
+        if(meat >= 23 && spinach >= 12 && honey >= 6)
         {
             WinPanel.SetActive(true);
             Time.timeScale = 0f;
@@ -48,7 +48,7 @@ public class ItemManagerScript : MonoBehaviour
     }
     public void gameLevel3()
     {
-        if(meat == 29 && spinach == 17 && honey == 13 && carrot == 9)
+        if(meat >= 29 && spinach >= 17 && honey >= 13 && carrot == 9)
         {
             WinPanel.SetActive(true);
             Time.timeScale = 0f;
