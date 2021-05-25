@@ -2259,7 +2259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f6f199101b59045a5578af0dbecce2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 90
+  timeRemaining: 130
   panelLost: {fileID: 2886506}
   timeText: {fileID: 131789958}
 --- !u!114 &701937754
@@ -4332,7 +4332,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0bd3ede104f377f4193f154f37ef9b7e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: cd7f8086e7220794faac665531886d3a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
@@ -5426,9 +5426,11 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Kumpulkan!
 
-    Daging : 10
+    Daging : 23
 
-    Sawi : 5'
+    Sawi : 12
+
+    Madu : 8'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}

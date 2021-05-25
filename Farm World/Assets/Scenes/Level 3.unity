@@ -2178,7 +2178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f6f199101b59045a5578af0dbecce2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 90
+  timeRemaining: 170
   panelLost: {fileID: 2886506}
   timeText: {fileID: 131789958}
 --- !u!114 &701937754
@@ -5652,7 +5652,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -146}
+  m_AnchoredPosition: {x: 0, y: -187.2}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1840287238
